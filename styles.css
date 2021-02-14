@@ -1,23 +1,30 @@
 body{
     background-color: rgb(241, 240, 239);
-    width: 95%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    padding: 10px;
 }
 
 #header{
     padding: 2%;
     text-align: center;
+    height: 60%;
     background-color: rgb(197, 229, 241);
 }
 
 #navbar{
     background-color: rgb(19, 19, 92);
+    padding: 10px;
 }
 
 .content{
     text-align: center;
-    height: 70%;
+    height: 95%;
     background-color: white;
 }
 
