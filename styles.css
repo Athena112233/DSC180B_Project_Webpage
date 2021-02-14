@@ -1,3 +1,4 @@
+/*general-----------------------------------------------------------------------------------------*/
 body{
     background-color: rgb(241, 240, 239);
     width: 90%;
@@ -10,22 +11,57 @@ h3{
     padding: 10px;
 }
 
-#header{
-    padding: 2%;
-    text-align: center;
-    height: 60%;
-    background-color: rgb(197, 229, 241);
-}
-
-#navbar{
-    background-color: rgb(19, 19, 92);
-    padding: 10px;
-}
-
 .content{
     text-align: center;
     height: 95%;
     background-color: white;
+}
+
+.flexbox{
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    background-color: rgba(169, 169, 169, 0.486);
+    margin: auto;
+    height: 100%;
+    width: 45%;
+}
+
+
+/*header section ----------------------------------------------------------------------------------*/
+#header{
+    position: realtive;
+    padding: 2%;
+    text-align: center;
+    height: 50%;
+    background: linear-gradient(rgb(115, 170, 218), rgb(174, 209, 240));
+    overflow: hidden;
+}
+
+#header img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    opacity: 50%;
+}
+
+
+#header div{
+    position: absolute;
+    top: 40%;
+}
+
+
+/*navigation bar ---------------------------------------------------------------------------------*/
+#navbar{
+    background-color: rgb(19, 19, 92);
+    padding: 10px;
+    position: sticky;
+    top: 0px;
 }
 
 .button{
