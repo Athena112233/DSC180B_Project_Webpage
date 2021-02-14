@@ -1,11 +1,27 @@
+body{
+    background-color: rgb(241, 240, 239);
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #header{
     padding: 2%;
     text-align: center;
-    background-color: pink;
-    width: 95%;
-    height: 20%;
+    background-color: rgb(197, 229, 241);
 }
 
 #navbar{
-    background-color: darkblue;
+    background-color: rgb(19, 19, 92);
+}
+
+.content{
+    text-align: center;
+    height: 70%;
+    background-color: white;
+}
+
+.button{
+    color: white;
+    padding: 5px;
 }
