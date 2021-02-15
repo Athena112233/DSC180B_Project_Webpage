@@ -11,6 +11,10 @@ h3{
     color: rgb(13, 13, 68);
 }
 
+h4{
+    color:rgb(13, 13, 68);
+}
+
 .content{
     text-align: center;
     height: 95%;
@@ -37,14 +41,14 @@ h3{
     position: realtive;
     height: 65%;
     overflow: hidden;
-    background-color:rgb(23, 23, 77);
+    background-color:rgb(63, 37, 83);
     text-align: center;
 }
 
 #header h1{
     position: relative;
     z-index: 2;
-    padding: 10%;
+    padding: 12%;
     color: white
 }
 
