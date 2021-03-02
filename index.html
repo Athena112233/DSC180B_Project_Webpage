@@ -1,76 +1,76 @@
+<!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
         <title> DSC180B Face Mask Detector </title> 
-        <link rel="stylesheet" href="styles.css">
-        <script src="myscripts.js"></script>
+        <script src="main.js"></script>
+        <style>
+            html{
+                background: url("data/combined2.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            nav{
+                background-color: rgb(37, 37, 56);
+                padding: 15px;
+                position: sticky;
+                top: 0px;
+            }
+
+            a{
+                color: white;
+                padding: 10px;
+
+            }
+            
+            div{
+                margin: 13.5%;
+                text-align: center;
+                color: white;
+                background-color:rgb(37, 37, 56);
+                opacity: 85%;
+                padding: 3%;
+            }
+
+            button{
+                width: 300px;
+                height: 100px;
+                font-size: 20px;
+            }
+
+            #explore{
+                color: rgb(37, 37, 56);;
+            }
+        </style>
     </head>
     <body>
-        <div id = 'header'>
+        <header>
+            <nav id = 'navbar'>
+                <a href = "pages.html#intro" class = "button">Introduction</a>
+                <a href = "pages.html#mehtod" class = "button">Methodology</a>
+                <a href = "pages.html#result" class = "button">Result</a>
+                <a href = "pages.html#conclusion" class = "button">Conclusion</a>
+                <a href = "pages.html#user" class = "button">User Manual</a>
+                <a href = "pages.html#about" class = "button"> About Us </a>
+            </nav>
             <div>
-                <h1>DSC180B Capstone: Face Mask Detector with Explainable Artificial Intelligence</h1>
-                <img src = "data/combined.jpg">
-            </div> 
-        </div>
-
-        <div id = 'navbar'>
-            <a href = "#intro" class = "button">Introduction</a>
-            <a href = "#mehtod" class = "button">Methodology</a>
-            <a href = "#result" class = "button">Result</a>
-            <a href = "#conclusion" class = "button">Conclusion</a>
-            <a href = "#user" class = "button">User Manual</a>
-            <a href = "about" class = "button"> About Us </a>
-        </div>
-
-        <div id = "intro" class = "content">
-            <h3>Introduction</h3> 
-            <div class = "flexbox">
-                <div class = "container">
-                    <h4> Face Mask Detector</h4>
-                </div>
-                <div class = "container">
-                    <h4> Why is this Important</h4>
-                </div>
+                <h1>
+                    DSC180B Capstone Project: Face Mask Detection
+                </h1>
+                <h2> Presented by Jerry Lin, Gavin Tran, Athena Liu</h2>
+                <p> <em>"The virus stop here. Wear a mask to protect your customer, employee, and family." </em></p> 
+                <button> <a id = "explore" href = "pages.html#intro"> Explore Our Product</a></button>
             </div>
-        </div>
 
-        <div id = "method" class = "content">
-            <h3>Methodology</h3>
-            <div class = "flexbox">
-                <div class = "container">
-                    <h4> CNN Model </h4>
-                </div>
-                <div class = "container">
-                    <h4> GRAD-CAM </h4>
-                </div>
-            </div>
-        </div>
-
-        <div id = "result" class = "content">
-            <h3>Result</h3> 
-        </div>
-
-        <div id = "conclusion" class = "content">
-            <h3> Conclusion </h3> 
-        </div>
-
-        <div id = "user" class = "content">
-            <h3>User Manual</h3> 
-        </div>
-        <div id = "about" class = "content">
-            <h3> About Us </h3>
-            <div class = "flexbox">
-                <div class = "container">
-                    <h4>Gavin Tran</h4>
-                </div>
-                <div class = "container">
-                    <h4>Athena Liu</h4>
-                </div>
-                <div class = "container">
-                    <h4>Jerry Lin</h4>
-                </div>
-            </div>
-        </div>
+        </header>
     </body>
     <footer>
 
