@@ -1,13 +1,14 @@
 /*general-----------------------------------------------------------------------------------------*/
 body, html{
-    background-color: rgb(241, 240, 239);
+    background-color:white;
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3{
-    padding: 10px;
+    padding: 5px;
+    font-size: 30px;
     color: rgb(13, 13, 68);
 }
 
@@ -19,7 +20,6 @@ h4{
     text-align: center;
     height: 95%;
     padding: 2.5%;
-    background-color: white;
 }
 
 .flexbox{
@@ -29,7 +29,7 @@ h4{
 }
 
 .container{
-    background-color: rgba(169, 169, 169, 0.486);
+    background-color: rgba(253, 237, 236, 0.486);
     margin: auto;
     height: 100%;
     width: 45%;
@@ -41,23 +41,21 @@ p{
 
 
 /*header section ----------------------------------------------------------------------------------*/
-#header{
+header{
     content: "";
+    padding: 10%;
     position: relative;
-    height: 75%;
     overflow: hidden;
     text-align: center;
-    background-image: url("data/combined2.jpg");
-    background-size: contain;
+    background-image: url("data/cover4.jpg");
+    background-size: 100% 120%;
 }
+
 #title{
     position: relative;
     color: white;
-    background-color: darkgray;
-    margin-top: 15%;
-    padding: 5%;
+    font-size: 40px;
     opacity: 95%;
-
 }
 
 /*navigation bar ---------------------------------------------------------------------------------*/
@@ -70,5 +68,18 @@ p{
 
 .button{
     color: white;
-    padding: 5px;
+    padding: 10px;
+}
+
+
+/*----------------------------------------------------------------------*/
+#introscript{
+    margin-top: 0;
+}
+
+.demoimg{
+    width: 30%;
+    margin: auto;
+    outline: auto;
+    outline-width: 5px;
 }
