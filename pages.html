@@ -44,12 +44,46 @@
             </div>
 
             <div id = "data" class = "content">
+                <h3> Training Data: MaskedFace-Net </h3>
+                <p id = 'data-script'> Our training data make our model unique. The current models you could find on the internet
+                    suffer from 
+                </p>
                 <div class = "flexbox">
-                    <img src = "data/00021_Mask.jpg" alt = "mask.jpg" class = 'demoimg'>
-                    <img src = "data/20060_Mask_Chin.jpg" alt = "incorrect_mask.jpg" class = 'demoimg'>
-                    <img src = "data/50020.jpg" atl = 'no-mask.jpg' class = "demoimg">
+                    <div>
+                        <img src = "data/00021_Mask.jpg" alt = "mask.jpg" class = 'demoimg'>
+                        <p> Correctly Masked </p>
+                    </div>
+                    <div>
+                        <img src = "data/20060_Mask_Chin.jpg" alt = "incorrect_mask.jpg" class = 'demoimg'>
+                        <p> Incorrectly Masked </p>
+                    </div>
+                    <div>
+                        <img src = "data/50020.jpg" atl = 'no-mask.jpg' class = "demoimg">
+                        <p> Missing Mask </p>
+                    </div>
+                </div>
+                
+                <div class = "flexbox">
+                    <div>
+                        <img src = "data/databreakdown_pie.png" alt = "data_breakdown.png" class = 'pie'>
+                        <p> Correctly Masked </p>
+                    </div>
+                    <div>
+                        <img src = "data/trainingbreakdown_pie.png" alt = "train_breakdown.png" class = 'pie'>
+                        <p> Incorrectly Masked </p>
+                    </div>
                 </div>
 
+                <div class = "flexbox">
+                    <div>
+                        <img src = "data/validationbreakdown_pie.png" atl = 'validation_breakdown.png' class = 'pie'>
+                        <p> Missing Mask </p>
+                    </div>
+                    <div>
+                        <img src = "data/testingbreakdown_pie.png" atl = 'testing_breakdown.png' class = 'pie'>
+                        <p> Missing Mask </p>
+                    </div>
+                </div>
             </div>
 
             <div id = "method" class = "content">

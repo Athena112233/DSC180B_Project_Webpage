@@ -39,7 +39,6 @@ p{
     padding: 25px;
 }
 
-
 /*header section ----------------------------------------------------------------------------------*/
 header{
     content: "";
@@ -78,8 +77,15 @@ header{
 }
 
 .demoimg{
-    width: 30%;
+    width: 75%;
     margin: auto;
-    outline: auto;
-    outline-width: 5px;
+    outline-style: auto;
 }
+
+
+.pie{
+    width: 120%;
+    padding: 5%;
+    margin: auto;
+}
+
