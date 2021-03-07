@@ -10,12 +10,13 @@
     <body>
         <nav id = 'navbar'>
             <a href = "#intro" class = "button">Introduction</a>
-            <a href = "#mehtod" class = "button">Methodology</a>
+            <a href = "#data" class = 'button'> Data </a>
+            <a href = "#mehtod" class = "button"> Methodology</a>
             <a href = "#result" class = "button">Result</a>
             <a href = "#demo" class = "button"> Demo </a>
             <a href = "#conclusion" class = "button">Conclusion</a>
             <a href = "#user" class = "button">User Manual</a>
-            <a href = "about" class = "button"> About Us </a>
+            <a href = "#about" class = "button"> About Us </a>
         </nav>
         <header>
             <div id = 'header'>
@@ -48,6 +49,8 @@
                 <p id = 'data-script'> Our training data make our model unique. The current models you could find on the internet
                     suffer from 
                 </p>
+
+                <h4 style="color: black"> Sample Images </h4>
                 <div class = "flexbox">
                     <div>
                         <img src = "data/00021_Mask.jpg" alt = "mask.jpg" class = 'demoimg'>
@@ -62,35 +65,41 @@
                         <p> Missing Mask </p>
                     </div>
                 </div>
+
+                <h3> A Reliable Dataset Makes a Good Detector </h3> 
                 
-                <div class = "flexbox">
+                <div id = "piechart" class = "flexbox">
                     <div>
                         <img src = "data/databreakdown_pie.png" alt = "data_breakdown.png" class = 'pie'>
-                        <p> Correctly Masked </p>
+                        <p> Dataset Breakdown </p>
                     </div>
                     <div>
                         <img src = "data/trainingbreakdown_pie.png" alt = "train_breakdown.png" class = 'pie'>
-                        <p> Incorrectly Masked </p>
+                        <p> Training Set Breakdown </p>
                     </div>
                 </div>
 
-                <div class = "flexbox">
+                <div id = "piechart" class = "flexbox">
                     <div>
                         <img src = "data/validationbreakdown_pie.png" atl = 'validation_breakdown.png' class = 'pie'>
-                        <p> Missing Mask </p>
+                        <p> Validation Set Breakdown </p>
                     </div>
                     <div>
                         <img src = "data/testingbreakdown_pie.png" atl = 'testing_breakdown.png' class = 'pie'>
-                        <p> Missing Mask </p>
+                        <p> Testing Set Breakdown </p>
                     </div>
                 </div>
             </div>
 
             <div id = "method" class = "content">
                 <h3> Our Product </h3>
-                <div class = "flexbox">
+                <div id = "methodbox" class = "flexbox">
                     <div class = "container">
-                        <h4> CNN Model </h4>
+                        <h4> Convolutional Neural Network </h4>
+                    </div>
+                    <div class = "container">
+                        <h4> GradCam </h4>
+                        <img src = "data/gradcam.png" width = 80% height = auto>
                     </div>
                     <div class = "container">
                         <h4> Intergraded Gradient</h4>
@@ -114,17 +123,24 @@
             <div id = "user" class = "content">
                 <h3>User Manual</h3> 
             </div>
+
             <div id = "about" class = "content">
                 <h3> About Us </h3>
                 <div class = "flexbox">
                     <div class = "container">
                         <h4>Gavin Tran</h4>
+                        <p> UCSD 4th Year Data Science</p>
+                        <p> Contact: </p>
                     </div>
                     <div class = "container">
                         <h4>Athena Liu</h4>
+                        <p> UCSD 4th Year Data Science</p>
+                        <p> Contact: </p>
                     </div>
                     <div class = "container">
                         <h4>Jerry Lin</h4>
+                        <p> UCSD 4th Year Data Science</p>
+                        <p> Contact: </p>
                     </div>
                 </div>
             </div>
