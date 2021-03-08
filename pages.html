@@ -32,22 +32,35 @@
                         <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
                     </div> 
                     <div id = "introscript" class = "container">
-                        <h4> Covid-19 in the United States</h4> 
-                        <p> The United States is one of the countries most impacted by the spread of SARS-COV19. 
-                            Even though CDC recommended the public that wearing a mask would help prevent the spread of COVID-19, 
-                            the business owners are the ones to enforce this policy for the safety of the employees and customers. 
-                        <h4>How to ressolve the Challenges?</h4>
-                        <p> That's right! You need a face mask detector! </p> 
+                        <h4> Challenges Under the Pandemic </h4> 
+                        <p> The United States is the country with the most amount of cases recorded of SARS-COV19. 
+                            Even though the CDC recommends that the public wear a mask when in close contact with others 
+                            to prevent further spread, many individuals are still not following protocol. Many businesses are 
+                            taking a hefty loss throughout these times while also being the ones that must enforce these temporary 
+                            mask policies for the safety of the employees and customers to protect what business they have left. 
+                            Although its one thing to wear a mask, its also important to be able to distinguish between wearing a 
+                            mask correctly or not to maximize the prevention of either catching or spreading the disease further.</p>
+                        
+                        <h4> How do we resolve this challenge? </h4>
+                        <p> In response to these chanllegnes, we created a face mask detector that would not only detect the presence 
+                            of a mask but also evaluate if the person is wearing the mask correctly! This face mask detector could help 
+                            business owners monitor and ensure customers wearing a mask at all time inside the store. More importantly, 
+                            it could help to protect you, your employees, and your customers' safety. Please read more to learn about our
+                             face mask detector. </p>
                     </div>
                 </div>
             </div>
 
             <div id = "data" class = "content">
-                <h3> Training Data: MaskedFace-Net </h3>
-                <p id = 'data-script'> Our training data make our model unique. The current models you could find on the internet
-                    suffer from 
+                <h3> Dataset: MaskedFace-Net </h3>
+                <p > 
+                    Our training dataset makes our model unique. Prior to developing our face mask detector, we researched many currently existing 
+                    face mask detectors developed by other teams. We found the common disadvantage between these models is the lack of sufficient 
+                    training data. Moreover, many face mask detectors are restricted to binary classification since their dataset only contains "mask" 
+                    and "no-mask" images. A more diverse dataset that contains images of people wearing a mask, no wearing a mask, and wearing 
+                    a mask incorrectly is required to achieve our goal. And, we overcame this issue by using the MaskedFace-Net dataset made available on Kaggle.
                 </p>
-
+                <a href = "https://www.kaggle.com/sheldonsebastian/maskednet-flicker-faces"> Click to access dataset </a>
                 <h4 style="color: black"> Sample Images </h4>
                 <div class = "flexbox">
                     <div>
@@ -65,7 +78,13 @@
                 </div>
 
                 <h3> A Reliable Dataset Makes a Good Detector </h3> 
-                
+                <p>
+                    The dataset that we trained our model on is MaskedFace-Net. 
+                    In this dataset, we have over 50,000 headshot images broken into three categories including people wearing a mask correctly, 
+                    incorrectly, or not at all. These 50,000 images are then split into three datasets, training, validation, and test, which 
+                    is included in a breakdown of our dataset seen below. The breakdown also reveals that each of these categories are evenly 
+                    distributed being roughly 1/3rd of each dataset respectively.Having a large dataset which is also labelled to deal with the 
+                    problem at hand and also fairly evenly distributed made this dataset stand out much more than other datasets. </p>
                 <div id = "piechart" class = "flexbox">
                     <div>
                         <img src = "data/databreakdown_pie.png" alt = "data_breakdown.png" class = 'pie'>
