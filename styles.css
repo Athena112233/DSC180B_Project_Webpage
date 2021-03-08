@@ -7,20 +7,23 @@ body, html{
 }
 
 h3{
-    padding: 5px;
     font-size: 30px;
     color:rgb(38, 38, 107);
+    margin: 2%;
 }
 
 h4{
     color:rgb(38, 38, 107);
     font-size: 20px;
+    margin: 1%;
 }
 
 .content{
     text-align: center;
-    height: 100%;
-    padding: 5%;
+    height: 95%;
+    padding: 3%;
+
+
 }
 
 .flexbox{
@@ -34,6 +37,10 @@ h4{
     margin: auto;
     height: 100%;
     width: 45%;
+}
+
+p{
+    padding: 15px;
 }
 
 /*header section ----------------------------------------------------------------------------------*/
@@ -91,4 +98,15 @@ header{
 
 #methodbox div{
     width: 100%;
+}
+
+#result p{
+    margin: auto;
+    width: 70%;
+}
+
+#resultbox{
+    display: flexbox;
+    flex-direction: column;
+
 }
