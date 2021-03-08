@@ -9,11 +9,12 @@ body, html{
 h3{
     padding: 5px;
     font-size: 30px;
-    color: rgb(13, 13, 68);
+    color:rgb(38, 38, 107);
 }
 
 h4{
-    color:rgb(13, 13, 68);
+    color:rgb(38, 38, 107);
+    font-size: 20px;
 }
 
 .content{
@@ -42,8 +43,8 @@ header{
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-image: url("data/cover4.jpg");
-    background-size: 100% 120%;
+    background-image: url("data/cover5.jpg");
+    background-size: 100% 100%;
 }
 
 #title{
