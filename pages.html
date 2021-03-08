@@ -131,13 +131,45 @@
                             solely with Guided Backpropagation. This image reveals the areas of interest through highlighting the pixels of the original image in this altered variation, 
                             which in this case reveals a headshot.
                         </p>
+                        <div class = "flexbox" id = "result-viz">
+                            <div>
+                                <img src = "data/result_viz1.png">
+                                <img src = "data/result_viz2.png">
+                                <img src = "data/result_viz3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Under Integrated Gradient?</h4> 
+                        <p>Likewise, since Integrated Gradients is purely for visualization purposes, we decided to provide an example case when running the model on the validation set. 
+                            Again, we will briefly go over each image, but if you’re more curious, check out our report where we go over this algorithm in more detail.  
+                            In this example, we see that Integrated Gradients reveals that there are two important individual features/objects, the first being a mask and the second being a face. 
+                            The mask is relatively clearer in the second image, mostly because of the importance of highlighting the entire face when detecting it as the object.
+                        </p>
+                        <img src = "data/result_viz4.png">
                     </div>
                 </div>
             </div>
 
             <div id = "demo" class = "content">
-                <h3>Demo</h3> 
-                <button> Demo </button> 
+                <h3>Face Mask Detector and Visualization Tool Kit Demo</h3> 
+                <p> We prepared three demos for you in this section. Please click on the images below to see the associated ouputs. </p>
+                <h4> Input Image </h4>
+                <div id = "demo-input" class = "flexbox">
+                    <form>
+                        <input type = "image" src = "data/case1.jpg">
+                        <input type = "image" src = "data/case2.jpg">
+                        <input type = "image" src = "data/case3.jpg">
+                    </form>
+                </div>
+                <div id = "demo-output" class = "flexbox">
+                    <div id = "display-input">
+
+                    </div>
+                    <div id = "display-viz">
+
+                    </div>
+                </div>
             </div>
     
             <div id = "conclusion" class = "content">
