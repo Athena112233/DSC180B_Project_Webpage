@@ -162,12 +162,24 @@
                     </form>
                 </div>
                 <div id = "demo-output" class = "flexbox">
-                    <div id = "display-input">
-                        <p id = "classification"> Input: </p> 
-
+                    <div id = "col1" class = 'flexbox'>
+                        <div id = 'original'>
+                            <h4> Original Image </h4>
+                            <img id = "original_image" src = "data/rendering-small.jpg">
+                        </div>
+                        <div id = 'gradcam'>
+                            <h4>Gradcam Output</h4> 
+                            <img id = "gradcam_output" src = "data/rendering-small.jpg">
+                        </div>
                     </div>
-                    <div id = "display-viz">
-
+                    <div id = 'col2'>
+                        <div>
+                            <h4> Classification: <span id = 'classification'> ??? </span></h4>
+                        </div>
+                        <div id = 'int-grad'>
+                            <h4>Intergraded Gradient Output</h4> 
+                            <img id = "ig_output" src = "data/rendering-big.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,7 +201,7 @@
                             intended way. We hope that more face mask detectors can be
                             implemented so that business owner can survive in this rather
                             difficult time and that people can protect not only themselves
-                            but also others
+                            but also others.
                         </p>
                     </div>
                     <div>

@@ -133,9 +133,52 @@ input{
 }
 
 #demo-output{
+    background-color:rgba(128, 128, 128, 0.26);
+    display: flexbox;
+    flex-direction: row;
+    margin-top: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#demo-output div{
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#col1{
     display: flexbox;
     flex-direction: column;
+    width: 60%;
+    outline: auto;
+    outline-width: 10px;
+    outline-color:white;
+
 }
+#original img{
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+}
+
+#gradcam img{
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+}
+
+#col2{
+    width: 100%;
+}
+
+#int-grad img{
+    width: 95%;
+    padding: 5px;
+    background-color: white;
+}
+
 
 #result-viz div{
     margin: auto;
