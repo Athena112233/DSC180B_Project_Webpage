@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title> DSC180B Face Mask Detector </title> 
         <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
     </head>
 
     <body>
@@ -156,14 +155,15 @@
                 <p> We prepared three demos for you in this section. Please click on the images below to see the associated ouputs. </p>
                 <h4> Input Image </h4>
                 <div id = "demo-input" class = "flexbox">
-                    <form>
-                        <input type = "image" src = "data/case1.jpg">
-                        <input type = "image" src = "data/case2.jpg">
-                        <input type = "image" src = "data/case3.jpg">
+                    <form id = "demo-form">
+                        <input type = "image" src = "data/case1.jpg" value = "case1" onclick="render_demo('case1');return false;">
+                        <input type = "image" src = "data/case2.jpg" value = "case2" onclick="render_demo('case2');return false;">
+                        <input type = 'image' src = "data/case3.jpg" value = "case3" onclick="render_demo('case3');return false;">
                     </form>
                 </div>
                 <div id = "demo-output" class = "flexbox">
                     <div id = "display-input">
+                        <p id = "classification"> Input: </p> 
 
                     </div>
                     <div id = "display-viz">
@@ -231,6 +231,7 @@
             </div>
         </section>
     </body>
+    <script src="main.js"></script>
     <footer>
 
     </footer>

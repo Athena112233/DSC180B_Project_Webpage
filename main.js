@@ -1,4 +1,4 @@
-
-$.get("pages.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
+function render_demo(demo){
+    console.log(demo);
+    document.getElementById("classification").innerHTML = 'Masked';
+}
