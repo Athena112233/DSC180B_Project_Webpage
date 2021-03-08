@@ -96,6 +96,15 @@ header{
     flex-direction: column;
 }
 
+#methodbox p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#methodbox img{
+    width: 80%;
+}
 #methodbox div{
     width: 100%;
 }
