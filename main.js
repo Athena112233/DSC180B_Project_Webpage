@@ -13,7 +13,7 @@ function render_demo(demo){
         document.getElementById('ig_output').src = "data/case2_results.jpg";
     }
     else if(demo == "case3"){
-        document.getElementById("classification").innerHTML = 'Wearig Mask Correctly';
+        document.getElementById("classification").innerHTML = 'Wearing Mask Correctly';
         document.getElementById("original_image").src = "data/case3.jpg";
         document.getElementById('gradcam_output').src = "data/case3_gradcam.jpg";
         document.getElementById('ig_output').src = "data/case3_results.jpg";

@@ -42,7 +42,7 @@
                             mask correctly or not to maximize the prevention of either catching or spreading the disease further.</p>
                         
                         <h4> How do we resolve this challenge? </h4>
-                        <p> In response to this chanllegne, we created a face mask detector that would not only detect the presence 
+                        <p> In response to this challenge, we created a face mask detector that would not only detect the presence 
                             of a mask but also evaluate if the person is wearing the mask correctly! This face mask detector could help 
                             business owners monitor and ensure customers wearing a mask at all time inside the store. More importantly, 
                             it could help to protect you, your employees, and your customers' safety. Please read more to learn about our
@@ -54,11 +54,11 @@
             <div id = "data" class = "content">
                 <h3> Dataset: MaskedFace-Net </h3>
                 <p > 
-                    Our training dataset makes our model unique. Prior to developing our face mask detector, we researched many currently existing 
-                    face mask detectors developed by other teams. We found the common disadvantage between these models is the lack of sufficient 
-                    training data. Moreover, many face mask detectors are restricted to binary classification since their dataset only contains "mask" 
-                    and "no-mask" images. A more diverse dataset that contains images of people wearing a mask, no wearing a mask, and wearing 
-                    a mask incorrectly is required to achieve our goal. And, we overcame this issue by using the MaskedFace-Net dataset made available on Kaggle.
+                    Our training dataset makes our model unique. Prior to developing our face mask detector, we researched many existing 
+                    face mask detectors developed by other teams. We found that a common disadvantage between these models was a lack of sufficient 
+                    training data. Moreover, many face mask detectors are restricted to binary classification since their dataset only contains "masked" 
+                    and "not masked" images. A more diverse dataset that contains images of people wearing a mask, incorrectly wearing a mask, and not wearing a
+                    mask at all is necessary for us to achieve our goal. We overcame this issue by using the MaskedFace-Net dataset which was made available on Kaggle.
                 </p>
                 <a href = "https://www.kaggle.com/sheldonsebastian/maskednet-flicker-faces"> Click to access dataset </a>
                 <h4 style="color: black"> Sample Images </h4>
@@ -79,7 +79,6 @@
 
                 <h3> A Reliable Dataset Makes a Good Detector </h3> 
                 <p>
-                    The dataset that we trained our model on is MaskedFace-Net. 
                     In this dataset, we have over 50,000 headshot images broken into three categories including people wearing a mask correctly, 
                     incorrectly, or not at all. These 50,000 images are then split into three datasets, training, validation, and test, which 
                     is included in a breakdown of our dataset seen below. The breakdown also reveals that each of these categories are evenly 
@@ -113,27 +112,25 @@
                 <div id = "methodbox" class = "flexbox">
                     <div class = "container">
                         <h4> Convolutional Neural Network </h4>
-                        <p>Our face mask detector uses a model called a pre-trained ResNet50, which is a type of convolutional neural network that is 50 layers deep. 
+                        <p>Our face mask detector uses a pre-trained ResNet50 model, which is a type of convolutional neural network that is 50 layers deep. 
                             ResNet50 is a powerful neural network that is able to classify images into categories. The structure of ResNet50 is made up of two parts: 
-                            the first part is feature extraction, where the model learns features in an image, and the second part is classification, where the model
-                             makes a prediction based on the features it has learned during the first phase. In our case, we fine-tune a pre-trained ResNet50 for our 
-                             task. This means that during training, we don’t change how the model learns features. Instead, we only train how model makes prediction.
+                            the first part is feature extraction, where the model learns the features in an image, and the second part is classification, where the model
+                             makes a prediction based on the features it has learned during the first phase. In our case, we fine-tuned a pre-trained ResNet50 for our 
+                             task. This means that during training, we don’t change how the model learns the features. Instead, we only train how the model makes its prediction.
                               We believe this is a feasible approach to achieving high accuracy.</p>
                         <img src = "data/resnet.png">
                     </div>
                     <div class = "container">
                         <h4> Grad-CAM </h4>
-                        <p> Grad-CAM is a type of Explainable AI (XAI) method that aims to identify what features does the model rely on in predicting the output. 
-                            The output of Grad-CAM is a heat map that will highlight the region where the model believes is important. 
-                            The heat map is generated by retrieving information from the last convolutional layer. The information is also known as feature maps, 
-                            which represent learned features and are important for model to predict output. The feature maps are passed into the classification layer to determine a weight for each feature. 
-                            Then this importance is visualized by calculating the weighted sum of each feature and through an activation function ReLU</p>
+                        <p> Grad-CAM is a type of Explainable AI (XAI) method that aims to identify what features a model relies on in predicting an output.
+                            The output of Grad-CAM is a heatmap that highlights the regions that the model believes is important.
+                            The heatmap is generated by retrieving information from the last convolutional layer. The information is also known as feature maps, 
+                            which represent learned features and are important for the model to predict outputs. The feature maps are passed into the classification layer to determine a weight for each feature. 
+                            Then, this importance is visualized by calculating the weighted sum of each feature and through an activation function, ReLU.</p>
                         <img src = "data/gradcam.png" width = 80% height = auto>
                     </div>
                     <div class = "container">
-                        <h4> Inte
-                            
-                            grated Gradient</h4>
+                        <h4> Integrated Gradient</h4>
                         <p>We also use Integrated Gradient to ensure our model is behaving the way we want it to. 
                             Integrated Gradient is another visualizing method that will assign a score to each feature given an 
                             input and a neural network function. Below is a formula for obtaining integrated gradient:
@@ -211,7 +208,7 @@
                             <img id = "original_image" src = "data/rendering-small.jpg">
                         </div>
                         <div id = 'gradcam'>
-                            <h4>Gradcam Output</h4> 
+                            <h4>Grad-CAM Output</h4> 
                             <img id = "gradcam_output" src = "data/rendering-small.jpg">
                         </div>
                     </div>
@@ -220,7 +217,7 @@
                             <h4> Classification: <span id = 'classification'> ??? </span></h4>
                         </div>
                         <div id = 'int-grad'>
-                            <h4>Intergrated Gradient Output</h4> 
+                            <h4>Integrated Gradient Output</h4> 
                             <img id = "ig_output" src = "data/rendering-big.jpg">
                         </div>
                     </div>
